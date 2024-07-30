@@ -1,0 +1,62 @@
+{% extends 'user_admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="p-4 sm:ml-64">
+    <h2 class="text-white  xl:text-3xl l:text-3xl md-sm:text-3xl sm:text-4xl flex align-center justify-center mt-5 mb-10">{% translate "Recent orders :" %}</h2>
+    <div class="p-4  border border-white rounded-lg dark:border-gray-700">
+        <div class="grid grid-cols-2 gap-4 mb-4">
+            
+            {% if orders %}
+            {% for order in orders %}
+            <dl class="max-w-md  p-8 text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                <div class="flex flex-col pb-3">
+                    <dt class="mb-2 text-white font-semibold xl:text-3xl l:text-3xl md-sm:text-3xl sm:text-2xl">Numéro de commande :  {{ order.id }}</dt>
+                    <dd class="mb-2 text-white font-semibold xl:text-3xl l:text-3xl md-sm:text-3xl sm:text-2xl"></dd>
+                </div>
+                <div class="flex flex-col py-3">
+                    <dt class="mb-1 text-white font-semibold md:text-lg dark:text-gray-400">Nom du produit :</dt>
+                    <dd class="mb-2 text-lg text-white font-thin">{{ order.product.name }}</dd>
+                </div>
+                <div class="flex flex-col pt-3">
+                    <dt class="mb-1 text-white font-semibold md:text-lg dark:text-gray-400">Prix du produit :</dt>
+                    <dd class="mb-2 text-lg text-white font-thin">{{ order.product.price }}0 €</dd>
+                </div>
+                <div class="flex flex-col pt-3">
+                    <dt class="mb-1 text-white font-semibold md:text-lg dark:text-gray-400">Quantité commandé : </dt>
+                    <dd class="text-lg text-white font-thin">{{ order.quantity }}</dd>
+                </div>
+            </dl>
+            <div class="flex align-center justify-center mt-10" >
+                <img class="w-72" src="{{ order.product.thumbnails1.url }}" alt="{% translate "product thumbnails" %}">
+            </div>
+            
+            {% endfor %}
+            {% else %}
+            <ul class="text-white">
+                <p class="mb-1 text-justify font-thin xl:text-xl l:text-xl md-sm:text-md sm:text-md xs:text-sm">{% translate "Unfortunately, you haven’t ordered yet, but we can fix this..." %}
+                <a class="font-bold text-justify ml-2 xl:text-xl l:text-xl md-sm:text-md sm:text-md xs:text-sm" href="{% url 'index' %}">{% translate "Go to shop" %}</a></p>
+            </ul>
+
+            {% endif %}
+            
+         </div>
+
+       </div>
+    </div>
+  
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

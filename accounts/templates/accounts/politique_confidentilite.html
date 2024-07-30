@@ -1,0 +1,153 @@
+{% extends 'user_admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="flex align-center justify-center ml-36  ">
+    <div class="p-8 text-white w-4/6">
+        <h1 class="text-4xl font-bold mb-16 text-center ">{% translate "Privacy Policy"%}</h1> 
+        
+            <h2 class="text-2xl font-semibold my-10 ">{% translate "Introduction"%}</h2>
+       
+            <p class="font-thin">
+                {% blocktranslate %}
+                With the development of new communication tools, it is necessary to pay special 
+                attention to the protection of privacy. 
+                That is why we are committed to respecting the confidentiality of 
+                the personal information we collect.
+                {% endblocktranslate %}
+            
+        </p>
+        <h2 class="text-2xl font-semibold my-10">{% translate "Collection of personal information"%} </h2>
+       
+        <ul class="list-disc list-inside font-thin space-y-2 my-10"> 
+            <li>{% translate "First name"%}</li> 
+            <li>{% translate "Postal address"%} </li> 
+            <li>{% translate "Postal code"%} </li> 
+            <li>{% translate "Email address"%}</li>
+            <li>{% translate "Phone number"%}</li> 
+        </ul>
+       
+       
+        <p class="font-thin my-10">
+            {% blocktranslate %}
+            The personal information we collect is collected through forms and through the interactivity established 
+            between you and our website. 
+            We also use, as indicated in the next section, cookies and/or logs to gather 
+            information about you.
+            {% endblocktranslate %}
+        </p>
+        <h2 class="text-2xl font-semibold mb-4">{% translate "Forms and interactivity:" %}</h2>
+        <p class="font-thin my-10">
+            {% blocktranslate %}
+            Your personal information is collected through forms, namely :
+            {% endblocktranslate %}
+        </p>
+        <div class="mb-6">
+            <ul class="list-disc list-inside font-thin space-y-2 my-10"> 
+                <li>{% translate "Website registration form" %} </li> 
+                <li>{% translate "Order form" %}</li> 
+            </ul>
+        </div>
+        <p class="font-thin my-10">
+            {% blocktranslate %}
+            We use the collected information for the following purposes :
+            {% endblocktranslate %}
+        </p>
+        <div class="mb-6">
+            <ul class="list-disc list-inside font-thin space-y-2 my-10"> 
+                <li>{% translate "Order tracking" %} </li> 
+                <li>{% translate "Information / Promotional offers" %}</li> 
+                <li>{% translate "Contact" %}</li> 
+            </ul>
+        </div>
+        <p class="font-thin my-10">
+            {% blocktranslate %}
+                Your information is also collected through the interactivity 
+                that may be established between you and our website, as follows:
+            {% endblocktranslate %}
+        </p>
+        <h2 class="text-2xl font-semibold mb-4">{% translate "Right of opposition and withdrawal" %} </h2>
+        <p class="font-thin my-8"> 
+            {% blocktranslate %} 
+            We are committed to offering you a right of opposition 
+            and withdrawal with respect to your personal information. 
+            {% endblocktranslate %} 
+        </p> 
+        <p class="font-thin my-8"> 
+            {% blocktranslate %} The right of opposition is understood to be the possibility offered to internet users to refuse 
+            the use of their personal information for certain purposes mentioned at the time of collection. 
+            {% endblocktranslate %} </p> 
+        <p class="font-thin my-8"> 
+            {% blocktranslate %} 
+            The right of withdrawal is understood to be the possibility offered to internet users 
+            to request that their personal information no longer appear, for example, in a mailing list. 
+            {% endblocktranslate %} 
+        </p> 
+        <p class="font-thin my-8"> 
+            <strong class="text-xl">{% translate "To exercise these rights, you can:" %}</strong> 
+        </p>
+        <ul class="list-disc list-inside font-thin space-y-2 my-10">
+            <li>{% translate "Postal code: 77190" %}</li>
+            <li>{% translate "Email: soo.mauve@gmail.com" %}</li>
+            <li>{% translate "Phone: 0781912490" %}</li>
+            <li>{% translate "Website section: My account > Contact" %}</li>
+        </ul>
+        <div>
+            <h2 class="text-2xl font-semibold mb-4">{% translate "Right of access" %}</h2>
+            <p class="font-thin my-8">
+              {% blocktranslate %}
+                We recognize the right of access and rectification for individuals who wish to consult, modify, or even delete information concerning them.
+              {% endblocktranslate %}
+            </p>
+            <p class="font-thin my-8">
+              <strong class="text-xl">{% translate "Exercising this right can be done:" %}</strong>
+            </p>
+            <ul class="list-disc list-inside font-thin space-y-2 my-10">
+              <li>{% translate "Postal code: 77190" %}</li>
+              <li>{% translate "Email: soo.mauve.pro@gmail.com" %}</li>
+              <li>{% translate "Phone: 0781912490" %}</li>
+              <li>{% translate "Website section: My account > Contact" %}</li>
+            </ul>
+            <h2 class="text-2xl font-semibold mb-4">{% translate "Security" %}</h2>
+            <p class="font-thin my-8">
+              {% blocktranslate %}
+                The personal information we collect is stored in a secure environment. People working for us are required to respect the confidentiality of your information.
+              {% endblocktranslate %}
+            </p>
+            <p class="font-thin my-8">
+              {% blocktranslate %}
+                To ensure the security of your personal information, we use the following measures:
+              {% endblocktranslate %}
+            </p>
+            <ul class="list-disc list-inside font-thin space-y-2 my-10">
+              <li>{% translate "SSL protocol" %}</li>
+              <li>{% translate "SET protocol" %}</li>
+              <li>{% translate "Access management - authorized person" %}</li>
+              <li>{% translate "Access management - concerned person" %}</li>
+              <li>{% translate "Computer backup" %}</li>
+              <li>{% translate "Username / password" %}</li>
+              <li>{% translate "Firewall" %}</li>
+            </ul>
+            <p class="font-thin my-8">
+              {% blocktranslate %}
+                We are committed to maintaining a high degree of confidentiality by integrating the latest technological innovations to ensure the confidentiality of your transactions. However, as no mechanism offers maximum security, a part of risk is always present when using the Internet to transmit personal information.
+              {% endblocktranslate %}
+            </p>
+            <p class="font-thin my-8">
+              {% blocktranslate %}
+                We are committed to maintaining a high degree of confidentiality by integrating the latest technological innovations to ensure the confidentiality of your transactions. However, since no mechanism offers maximum security, a risk is always present when using the Internet to transmit personal information.
+              {% endblocktranslate %}
+            </p>
+            <h2 class="text-3xl font-semibold mb-4">{% translate "Legislation" %}</h2>
+            <p class="font-thin my-8">
+              {% blocktranslate %}
+                We are committed to complying with the legislative provisions set out in:
+              {% endblocktranslate %}
+            </p>
+            <p class="font-thin my-8">
+              {% translate "Legislation" %}: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" class="text-blue-400 underline">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>
+            </p>
+          </div>
+
+{% endblock %}

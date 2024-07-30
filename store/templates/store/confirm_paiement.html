@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<div class="flex justify-evenly items-center mx-auto mt-20">
+        
+    <div class="space-y-4 w-full max-w-md">
+       <div class="container mb-5 flex justify-center items-center">
+            <div class="space-y-4 w-full">
+    <div class="container mb-5 flex justify-center items-center">
+        <img src="{% static "images/bills.png" %}" class="h-10 w-10 mr-3" alt="icone bills">
+        <h2 class="text-2xl font-bold text-black text-center inline-block">{% translate "Order summary :" %}</h2>
+    </div>
+    {% for form in forms %}
+        <div class="flex justify-between align-center">
+            <p class="font-manrope font-bold text-md text-gray-900 text-left pl-4">x{{ form.instance.quantity }}</p>
+            <p class="font-manrope font-bold text-md text-gray-900 text-center">{{ form.instance.product.name | truncatewords:4 }}</p>
+            <p class="font-manrope font-bold text-md text-gray-900 text-right pr-4">{{ form.instance.product.price | floatformat:2 }} €</p>
+        </div>
+    {% endfor %}
+</div>
+
+
+</div>
+<form action="{% url 'update_cart' %}" method="POST" class="flex items-center w-full">
+    {% csrf_token %}
+    <div class="flex items-center justify-end my-4 w-full max-w-md">
+        <label class="text-xl my-auto mr-3" for="code"></label>
+        <div class="flex items-center">
+            <input class="w-144 rounded-full text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded placeholder-gray-400 focus:outline-none leading-relaxed" type="text" name="code" id="code" placeholder="Code de réduction">
+        </div>
+        <button class="w-32  py-2.5 flex items-center justify-center gap-2 rounded-full font-bold text-xs shadow-sm shadow-transparent transition-all duration-500 text-white bg-black hover:bg-yellow-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500" type="submit" name="applyCoupon">{% translate "Confirm" %}</button>
+    </div>
+</form> 
+</div>
+<div class="w-1 bg-gray-200 rounded-full h-64"></div>
+<div class="flex align-center justify-center"> 
+        <form action="{% url 'create-checkout-session' %}" method="POST">
+            {% csrf_token %}
+            <button class="rounded-md py-3 px-16 bg-green-600 text-white font-semibold text-lg w-full text-center transition-all duration-500 hover:bg-green-700">
+                {% trans "Pay" %}
+            </button>
+        </form>
+   </div>
+       </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

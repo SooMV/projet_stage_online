@@ -1,0 +1,82 @@
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="p-6 mt-10 space-y-4 w-full max-w-md mx-auto">
+    <div class="container mb-5 flex flex-col justify-center items-center">
+        <form class="space-y-6" method="POST" action="{% url 'confirm_home_delivery' %}">
+            {% csrf_token %}
+            {{ delivery_form.non_field_errors }}
+            <div class="container">
+                <div>
+                    <label for="id_first_name" class="block text-black text-sm font-medium text-gray-700 my-2">{% translate "First name" %}</label>
+                    {{ delivery_form.first_name }}
+                    {% for error in delivery_form.first_name.errors %}
+                        <p class="text-red-500">{{ error }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <label for="id_last_name" class="block text-black text-sm font-medium text-gray-700 my-2">{% translate "Last name" %}</label>
+                    {{ delivery_form.last_name }}
+                    {% for error in delivery_form.last_name.errors %}
+                        <p class="text-red-500">{{ error }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <label for="id_phone_number" class="block text-black text-sm font-medium text-gray-700 my-2">{% translate "Telephone number" %}</label>
+                    {{ delivery_form.phone_number }}
+                    {% for error in delivery_form.phone_number.errors %}
+                        <p class="text-red-500">{{ error }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <label for="id_address1" class="block text-black text-sm font-medium text-gray-700 my-2">{% translate "Delivery address" %}</label>
+                    {{ delivery_form.address_1 }}
+                    {% for error in delivery_form.address_1.errors %}
+                        <p class="text-red-500">{{ error }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <label for="id_city" class="block text-black text-sm font-medium text-gray-700 my-2">{% translate "City" %}</label>
+                    {{ delivery_form.city }}
+                    {% for error in delivery_form.city.errors %}
+                        <p class="text-red-500">{{ error }}</p>
+                    {% endfor %}
+                </div>
+                <div class="container grid grid-cols-2 gap-5 my-2">
+                    <div>
+                        <label for="id_zip_code" class="block text-black text-sm font-medium text-gray-700">{% translate "Zipcode" %}</label>
+                        {{ delivery_form.zip_code }}
+                        {% for error in delivery_form.zip_code.errors %}
+                            <p class="text-red-500">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        <label for="id_country" class="block text-black text-sm font-medium text-gray-700">{% translate "Country" %}</label>
+                        {{ delivery_form.country }}
+                        {% for error in delivery_form.country.errors %}
+                            <p class="text-red-500">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button type="submit" name="delivery_form" class="w-full mt-5 mb-3 flex justify-center py-2 px-4 border border-transparent rounded-full  shadow-sm text-lg font-medium text-white bg-black hover:bg-yellow-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
+                {% translate "Validate the delivery information" %}
+            </button>
+        </form>
+  
+  
+  
+
+    
+</div>
+</div>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,43 @@
+{% extends 'user_admin.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="p-2 mt-20 sm:ml-64 ">
+<div class="flex justify-center items-center gap-20 flex-col"> 
+    <div class="p-8 space-y-6 bg-gray-200 rounded-lg shadow-md w-auto">
+        <h1 class="text-4xl font-bold mb-16  text-center">Supprimer mon compte</h1>
+        <p class="font-medium">Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.</p>
+        
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="confirm_delete" value="true">
+
+            <div class="mt-8">
+                <label class="block text-black font-medium mb-2" for="reason">Quelle est la raison de votre départ ?</label>
+                <select class="appearance-none bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full max-w-xs" name="reason" id="reason">
+                    <option value="">Choisissez une option</option>
+                    <option value="service_ne_plait_plus">Le service ne me plait plus</option>
+                    <option value="probleme_technique">Problème technique</option>
+                    <option value="compte_inutile">Compte inutile</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <div class="mt-8" >
+                <label class="block text-black font-medium mb-2" for="other-reason">Précisez la raison</label>
+                <textarea class="w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" name="other-reason" id="other-reason" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="rounded-md py-3 px-16 bg-red-600 text-white font-semibold text-lg w-full text-center transition-all duration-500 hover:bg-red-700 mt-8">Supprimer mon compte</button>
+        </form>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+{% endblock %}
+

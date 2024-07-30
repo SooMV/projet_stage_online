@@ -1,0 +1,88 @@
+{% load static %}
+{% load i18n %}
+ <hr class="my-4">
+ <button data-modal-target="select-modal" data-modal-toggle="select-modal" class="block mx-auto  font-bold rounded-full text-sm px-5 py-2.5 text-white bg-black hover:bg-yellow-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500" type="button">
+    {% trans "View all filters" %}
+  </button>
+  <!-- Main modal -->
+<div id="select-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-md max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    {% translate "Filter by :" %}
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="select-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5">
+                <p class="text-gray-500 dark:text-gray-400 mb-4">{% translate "Select your filter:" %}</p>
+                <ul class="space-y-4 mb-4">
+                    <li>
+                        <form method="get" class="space-y-4">
+                            <div class="relative w-full ">
+                              <label for="category" class="block mb-2 text-sm font-medium text-gray-600 w-full">{% trans "Category" %}</label>
+                              <select name="category" id="category" class="h-12 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white">
+                                <option value="">{% trans "All categories" %}</option>
+                                {% for category in category_choices %}
+                                  <option value="{{ category.0 }}" {% if filterset.form.category.value == category.0 %}selected{% endif %}>{{ category.1 }}</option>
+                                {% endfor %}
+                              </select>
+                            </div>
+                            <div class="relative w-full mb-8">
+                              <label for="genre" class="block mb-2 text-sm font-medium text-gray-600 w-full">{% trans "Genre" %}</label>
+                              <select name="genre" id="genre" class="h-12 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white">
+                                <option value="">{% trans "All" %}</option>
+                                {% for value, label in filterset.form.genre.field.choices %}
+                                  <option value="{{ value }}" {% if filterset.form.genre.value == value %}selected{% endif %}>{{ label }}</option>
+                                {% endfor %}
+                              </select>
+                            </div>
+                            <div class="relative w-full mb-8">
+                              <label for="price" class="block mb-2 text-sm font-medium text-gray-600 w-full">{% trans "Price range" %}</label>
+                              <select name="price" id="price" class="h-12 border border-gray-300 text-gray-900 text-xs font-medium rounded-full block w-full py-2.5 px-4 appearance-none relative focus:outline-none bg-white">
+                                <option value="">{% trans "All" %}</option>
+                                <option value="lt100">-100 €</option>
+                                <option value="bt100_200">100 € - 200 €</option>
+                                <option value="gt200">+200 €</option>
+                              </select>
+                            </div>
+                            <div class="grid grid-cols-5 gap-4">
+                              <div class="col-span-full">
+                                <label for="price" class="block mb-2 text-sm font-medium text-gray-600 w-full">{% trans "By size" %}</label>
+                              </div>
+                              {% for taille in tailles %}
+                                <div class="form-check">
+                                  <input class="form-check-input appearance-none rounded-sm border border-gray-300 focus:border-black focus:ring-black checked:bg-yellow-400 checked:border-yellow-400" type="checkbox" name="size" value="{{ taille }}" id="size_{{ taille }}" {% if taille in filter.value %}checked{% endif %}>
+                                  <label class="form-check-label block text-sm font-medium text-gray-700 " for="size_{{ taille }}">
+                                    {{ taille }}
+                                  </label>
+                                </div>
+                              {% endfor %}
+                            </div>
+                            <button type="submit" class="w-full mt-3 py-2.5 flex items-center justify-center gap-2 rounded-full font-bold text-xs shadow-sm shadow-transparent transition-all duration-500 text-white bg-black hover:bg-yellow-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.4987 13.9997L13.1654 12.6663M13.832 7.33301C13.832 10.6467 11.1457 13.333 7.83203 13.333C4.51832 13.333 1.83203 10.6467 1.83203 7.33301C1.83203 4.0193 4.51832 1.33301 7.83203 1.33301C11.1457 1.33301 13.832 4.0193 13.832 7.33301Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                              {% translate "Filter" %}
+                            </button>
+                          </form>
+                          
+        </li>
+    </ul>
+    
+</div>
+</div>
+        </div>
+    </div>
+
+
+<hr class="my-4"> 
+

@@ -1,0 +1,16 @@
+{% extends 'user_admin.html' %}
+{% load i18n %}
+{% block content %}
+
+<h1>Adresses de livraison</h1>
+<ul>
+    {% for address in addresses %}
+        <li>
+            <a href="{% url 'address-update' pk=address.pk %}">{{ address }}</a>
+        </li>
+    {% empty %}
+        <li>Aucune adresse trouvée pour cet utilisateur.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

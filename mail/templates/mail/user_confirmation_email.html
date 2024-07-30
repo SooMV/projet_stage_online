@@ -1,0 +1,10 @@
+{% load static %}
+{% load static %}
+<html>
+<body>
+    <h1>{% trans "Thank you for your message" %} {{ user.name }}!</h1>
+    <p>{% trans "We have received your inquiry and will respond to you shortly." %}</p>
+
+    <img src="{% url 'images/email_bg2.jpg' %}" alt="{% trans "welcome image" %}">
+</body>
+</html>

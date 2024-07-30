@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<div class="container w-4/5 mx-auto">
+    <h1 class="text-3xl font-bold text-black text-center mt-10 mb-5">{% translate "Choose your shipment destination" %}</h1>
+    <hr class="mt-10">
+
+    <!-- Widget Mondial Relay -->
+    <div class="w-full h-auto mx-auto my-10 rounded-xl">
+        <div id="Zone_Widget" class="h-96"></div>
+    </div>
+
+    <h1 class="text-3xl font-bold text-black text-center mt-10 mb-5">{% translate "Choose your shipping method" %}</h1>
+    <div class="container flex align-center justify-evenly">
+        <div class="flex align-center justify-start flex-col my-auto">
+            <select id="delivery-option" class="appearance-none bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full max-w-xs" name="delivery_option">
+                <option value="" selected disabled>{% translate "Select delivery option" %}</option>
+                <option value="relay">{% translate "Relay" %}</option>
+                <option value="home">{% translate "Home" %}</option>
+            </select>
+        </div>
+        
+        <!-- Requete AJAX : option de livraison-->
+    </div>
+    <form method="POST" action="{% url 'confirm_relay_delivery' %}" id="form_relay">
+        {% csrf_token %}
+        <!-- Champs de formulaire pour les informations de relais -->
+        <div id="delivery-details">
+            <input type="hidden" id="cb_Nom" name="name"></input>
+            <input type="hidden" id="cb_Adresse" name="cb_Adresse"></input>
+            <input type="hidden" id="cb_CP" name="postcode"></input>
+            <input type="hidden" id="cb_Ville" name="city"></input>
+            <input type="hidden" id="cb_Pays" name="country"></input>
+            {% comment %} <button class="my-auto mx-auto bg-blue-700 hover:bg-blue-800 rounded-md px-8 py-2" type="submit">Valider</button> {% endcomment %}
+
+        </div>
+      
+    
+        <!-- Autres champs de votre formulaire de livraison à domicile -->
+    </form> 
+
+    {% if viewed_products %}
+<div class="container w-4/5 mx-auto mt-32">
+    <h1 class="text-3xl font-bold text-black text-center mt-10 mb-5">{% trans "Maybe you will like ?" %}</h1>
+    <hr class="my-10">
+</div>
+
+<section class="splide w-4/5 mx-auto">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for product in viewed_products %}
+            <li class="splide__slide p-10 flex align-center justify-center">
+                 <div class="max-w-xs rounded-md overflow-hidden shadow-md flex flex-col h-full">
+            <div class="h-64 overflow-hidden flex justify-center items-center">
+                <img src="{{ product.thumbnails1.url }}" alt="{{ product.name }}" class="object-cover w-full h-full">
+            </div>
+            <div class="px-4 pt-2 flex-grow">
+                <div class="font-bold text-lg mb-2">{{ product.name }}</div>
+            </div>
+            <div class="px-4">
+                <div class="flex justify-between items-center">
+                    <span class="font-light text-lg">{{ product.price | floatformat }} €</span>
+                </div>
+            </div>
+            <div class="px-5 py-5 flex justify-center mt-auto">
+                <a href="{% url 'product' product.slug %}" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-1 text-center w-full rounded-md text-sm mx-auto">
+                    {% translate "See details" %}
+                </a>
+            </div>
+        </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+{% endif %}
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  
+    
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        $("#Zone_Widget").MR_ParcelShopPicker({
+          Target: "#Target_Widget",
+                    
+          Brand: "BDTEST  ",
+          // Default Country (2 letters) used for search at loading
+          Country: "FR",
+          // Default postal Code used for search at loading
+          PostCode: "75001",
+          // Delivery mode (Standard [24R], XL [24L], XXL [24X], Drive [DRI])
+          ColLivMod: "24R",
+          // Number of parcelshops requested (must be less than 20)
+          NbResults: "7",
+          TargetDisplay: "#TargetDisplay_Widget",
+          TargetDisplayInfoPR: "#TargetDisplayInfoPR_Widget",
+        
+          
+          Responsive: true,
+              // Show the results on Leaflet map usng OpenStreetMap. 
+          ShowResultsOnMap: true,
+          EnableGeolocalisatedSearch : true,
+            OnParcelShopSelected: function(data) {
+                // Mettez à jour les champs de votre formulaire avec les données sélectionnées
+                $("#cb_ID").html(data.ID);
+                $("#cb_Nom").val(data.Nom);
+                $("#cb_Adresse").val(data.Adresse1);
+                $("#cb_CP").val(data.CP);
+                $("#cb_Ville").val(data.Ville);
+                $("#cb_Pays").val(data.Pays);
+                // D'autres champs à mettre à jour si nécessaire
+            }
+        });
+      });
+
+      $(document).ready(function(){
+        $('#delivery-option').change(function(){
+            var option = $(this).val();
+            $.ajax({
+                url: '{% url "load_delivery_option" %}',
+                data: {
+                    'option': option
+                },
+                success: function(data){
+                    $('#delivery-details').html(data.html);
+                }
+            });
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: "loop",
+            perPage: 1,
+            breakpoints: {
+                1440: {
+                    perPage: 3,
+                },
+                1024: {
+                    perPage: 3,
+                },
+                768: {
+                    perPage: 1,
+                },
+                640: {
+                    perPage: 1,
+                },
+                375: {
+                    perPage: 1,
+                },
+                320: {
+                    perPage: 1,
+                },
+            },
+            focus: "center",
+        });
+    
+        splide.mount();
+    });
+    
+
+</script>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/parcelshop_picker.js' %}"></script>
+<script src="{% static 'js/carousel_viewedProduct.js' %}"></script>
+<script src="{% static 'js/csrf_ajax.js' %}"></script>
+{% endblock %}
+
+
+
+
+
+
+
+
+

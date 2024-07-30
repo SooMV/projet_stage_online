@@ -1,0 +1,28 @@
+{% load i18n static %}
+{% load static %}
+
+
+{% block content %}
+<div class="container flex items-center justify-center my-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {% for product in filterset.qs %}
+        <div class="max-w-xs rounded-md overflow-hidden shadow-2xl">
+            <img src="{{ product.thumbnails1.url }}" alt="{{ product.name }}">
+            <div class="px-4 pt-2">
+                <div class="font-bold text-lg mb-2">{{ product.name }}</div>
+            </div>
+            <div class="px-4 ">
+                <div class="flex justify-between items-center">
+                    <span class="font-light text-lg">{{ product.price | floatformat }} €</span>
+                </div>
+            </div>
+            <div class="px-5 py-5 flex justify-center">
+                <a href="{% url 'product' product.slug %}" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-1 text-center w-full rounded-md text-sm mx-auto">
+                    {% translate "See details" %}
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

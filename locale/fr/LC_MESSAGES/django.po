@@ -1,0 +1,2521 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-28 14:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: accounts/models.py:48
+msgid "User_Email"
+msgstr "Email utilisateur"
+
+#: accounts/models.py:61
+msgid "Customer"
+msgstr "Client"
+
+#: accounts/models.py:62
+msgid "Customers"
+msgstr "Clients"
+
+#: accounts/models.py:67 store/models.py:135 store/models.py:168
+#: store/models.py:260
+msgid "User"
+msgstr "Utilisateur"
+
+#: accounts/models.py:71
+msgid "Street address and number"
+msgstr "Numéro de rue et nom de rue"
+
+#: accounts/models.py:71
+msgid "Address 1"
+msgstr "Adresse 1"
+
+#: accounts/models.py:72 map/models.py:7
+#: store/templates/store/partial_home_delivery.html:43
+msgid "City"
+msgstr "Ville"
+
+#: accounts/models.py:73
+msgid "Zip Code"
+msgstr "Code postal"
+
+#: accounts/models.py:74
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+#: accounts/models.py:76
+msgid "Default Address"
+msgstr "Adresse par défault"
+
+#: accounts/models.py:79
+msgid "Shipping Address"
+msgstr "Adresse de livraison"
+
+#: accounts/models.py:80
+msgid "Shipping Addresses"
+msgstr "Adresses de livraison"
+
+#: accounts/templates/accounts/address.html:4
+msgid "-default"
+msgstr "-défault"
+
+#: accounts/templates/accounts/address.html:23
+msgid "Set as default"
+msgstr "Parametrer a défault"
+
+#: accounts/templates/accounts/index.html:9
+msgid "Welcome to your dashboard "
+msgstr "Bienvenue sur notre plateform"
+
+#: accounts/templates/accounts/index.html:17
+#, fuzzy
+#| msgid "My orders"
+msgid "View my order"
+msgstr "Commandes"
+
+#: accounts/templates/accounts/index.html:24
+msgid "Send a mail"
+msgstr ""
+
+#: accounts/templates/accounts/index.html:32
+#, fuzzy
+#| msgid "Confirm password"
+msgid "Change my password"
+msgstr "Confirmer le mot de passe"
+
+#: accounts/templates/accounts/index.html:40
+#, fuzzy
+#| msgid "Delete account"
+msgid "Delete accounts"
+msgstr "Mon compte"
+
+#: accounts/templates/accounts/login.html:14
+#: accounts/templates/accounts/signup.html:13 mail/models.py:9
+#: mail/models.py:17
+msgid "Email"
+msgstr "Email"
+
+#: accounts/templates/accounts/login.html:21
+#: accounts/templates/accounts/signup.html:20
+msgid "Password"
+msgstr "Mot de passe"
+
+#: accounts/templates/accounts/login.html:37
+#, fuzzy
+#| msgid "Let's see"
+msgid "Let's go"
+msgstr "Voir"
+
+#: accounts/templates/accounts/login.html:40
+msgid "Do not have an account ?"
+msgstr "Vous n'avez pas de compte ?"
+
+#: accounts/templates/accounts/login.html:40
+msgid "Register here"
+msgstr "Inscrivez-vous ici"
+
+#: accounts/templates/accounts/my_order.html:7
+msgid "Recent orders :"
+msgstr "Commandes récentes :"
+
+#: accounts/templates/accounts/my_order.html:32
+#, fuzzy
+#| msgid "Product material"
+msgid "product thumbnails"
+msgstr "Matière"
+
+#: accounts/templates/accounts/my_order.html:38
+msgid "Unfortunately, you haven’t ordered yet, but we can fix this..."
+msgstr ""
+"Malheuresement, vous n'avais encore commander, mais nous pouvons arranger "
+"ça..."
+
+#: accounts/templates/accounts/my_order.html:39
+msgid "Go to shop"
+msgstr "Aller au magasin"
+
+#: accounts/templates/accounts/politique_confidentilite.html:8
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: accounts/templates/accounts/politique_confidentilite.html:10
+msgid "Introduction"
+msgstr "Introduction"
+
+#: accounts/templates/accounts/politique_confidentilite.html:13
+msgid ""
+"\n"
+"                With the development of new communication tools, it is "
+"necessary to pay special \n"
+"                attention to the protection of privacy. \n"
+"                That is why we are committed to respecting the "
+"confidentiality of \n"
+"                the personal information we collect.\n"
+"                "
+msgstr ""
+"\n"
+"                Avec le développement de nouveaux outils de communication, "
+"il est nécessaire de porter une attention particulière à la protection de la "
+"vie privée. \n"
+"                C'est pourquoi nous nous engageons à respecter la "
+"confidentialité des \n"
+"                informations personnelles que nous collectons.\n"
+"                "
+
+#: accounts/templates/accounts/politique_confidentilite.html:21
+msgid "Collection of personal information"
+msgstr "Collecte des informations personnelles"
+
+#: accounts/templates/accounts/politique_confidentilite.html:24
+#: store/templates/store/partial_home_delivery.html:15
+msgid "First name"
+msgstr "Prénom"
+
+#: accounts/templates/accounts/politique_confidentilite.html:25
+msgid "Postal address"
+msgstr "Adresse postale"
+
+#: accounts/templates/accounts/politique_confidentilite.html:26
+msgid "Postal code"
+msgstr "Code postal"
+
+#: accounts/templates/accounts/politique_confidentilite.html:27
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1909
+msgid "Email address"
+msgstr "Adresse email"
+
+#: accounts/templates/accounts/politique_confidentilite.html:28
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: accounts/templates/accounts/politique_confidentilite.html:33
+msgid ""
+"\n"
+"            The personal information we collect is collected through forms "
+"and through the interactivity established \n"
+"            between you and our website. \n"
+"            We also use, as indicated in the next section, cookies and/or "
+"logs to gather \n"
+"            information about you.\n"
+"            "
+msgstr ""
+"\n"
+"            Les informations personnelles que nous collectons sont "
+"recueillies par le biais de formulaires et par l'interactivité établie \n"
+"            entre vous et notre site web. \n"
+"            Nous utilisons également, comme indiqué dans la section "
+"suivante, des cookies et/ou des journaux pour collecter \n"
+"            des informations vous concernant.\n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:40
+msgid "Forms and interactivity:"
+msgstr "Formulaires et interactivité :"
+
+#: accounts/templates/accounts/politique_confidentilite.html:42
+msgid ""
+"\n"
+"            Your personal information is collected through forms, namely :\n"
+"            "
+msgstr ""
+"\n"
+"            Vos informations personnelles sont collectées par le biais de "
+"formulaires, à savoir :\n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:48
+msgid "Website registration form"
+msgstr "Formulaire d'inscription au site"
+
+#: accounts/templates/accounts/politique_confidentilite.html:49
+msgid "Order form"
+msgstr "Formulaire de commande"
+
+#: accounts/templates/accounts/politique_confidentilite.html:53
+msgid ""
+"\n"
+"            We use the collected information for the following purposes :\n"
+"            "
+msgstr ""
+"\n"
+"            Nous utilisons les informations collectées pour les finalités "
+"suivantes :\n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:59
+msgid "Order tracking"
+msgstr "Suivi des commandes"
+
+#: accounts/templates/accounts/politique_confidentilite.html:60
+msgid "Information / Promotional offers"
+msgstr "Information / Offres promotionnelles"
+
+#: accounts/templates/accounts/politique_confidentilite.html:61
+msgid "Contact"
+msgstr "Contact"
+
+#: accounts/templates/accounts/politique_confidentilite.html:65
+msgid ""
+"\n"
+"                Your information is also collected through the "
+"interactivity \n"
+"                that may be established between you and our website, as "
+"follows:\n"
+"            "
+msgstr ""
+"\n"
+"                Vos informations sont également collectées par le biais de "
+"l'interactivité \n"
+"                qui peut être établie entre vous et notre site web, comme "
+"suit :\n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:70
+msgid "Right of opposition and withdrawal"
+msgstr "Droit d'opposition et de retrait"
+
+#: accounts/templates/accounts/politique_confidentilite.html:72
+msgid ""
+" \n"
+"            We are committed to offering you a right of opposition \n"
+"            and withdrawal with respect to your personal information. \n"
+"            "
+msgstr ""
+" \n"
+"            Nous nous engageons à vous offrir un droit d'opposition \n"
+"            et de retrait concernant vos informations personnelles. \n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:78
+msgid ""
+" The right of opposition is understood to be the possibility offered to "
+"internet users to refuse \n"
+"            the use of their personal information for certain purposes "
+"mentioned at the time of collection. \n"
+"            "
+msgstr ""
+" Le droit d'opposition s'entend comme étant la possibilité offerte aux "
+"internautes de refuser \n"
+"            l'utilisation de leurs informations personnelles pour certaines "
+"finalités mentionnées lors de la collecte. \n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:82
+msgid ""
+" \n"
+"            The right of withdrawal is understood to be the possibility "
+"offered to internet users \n"
+"            to request that their personal information no longer appear, for "
+"example, in a mailing list. \n"
+"            "
+msgstr ""
+" \n"
+"            Le droit de retrait s'entend comme étant la possibilité offerte "
+"aux internautes \n"
+"            de demander que leurs informations personnelles ne figurent "
+"plus, par exemple, dans une liste de diffusion. \n"
+"            "
+
+#: accounts/templates/accounts/politique_confidentilite.html:88
+msgid "To exercise these rights, you can:"
+msgstr "Pour exercer ces droits, vous pouvez :"
+
+#: accounts/templates/accounts/politique_confidentilite.html:91
+#: accounts/templates/accounts/politique_confidentilite.html:107
+msgid "Postal code: 77190"
+msgstr "Code postal : 77190"
+
+#: accounts/templates/accounts/politique_confidentilite.html:92
+msgid "Email: soo.mauve@gmail.com"
+msgstr "Email: soo.mauve@gmail.com"
+
+#: accounts/templates/accounts/politique_confidentilite.html:93
+#: accounts/templates/accounts/politique_confidentilite.html:109
+msgid "Phone: 0781912490"
+msgstr "Téléphone : 0781912490"
+
+#: accounts/templates/accounts/politique_confidentilite.html:94
+#: accounts/templates/accounts/politique_confidentilite.html:110
+msgid "Website section: My account > Contact"
+msgstr "Section sur le site : Mon compte > Contact"
+
+#: accounts/templates/accounts/politique_confidentilite.html:97
+msgid "Right of access"
+msgstr "Droit d'accès"
+
+#: accounts/templates/accounts/politique_confidentilite.html:99
+msgid ""
+"\n"
+"                We recognize the right of access and rectification for "
+"individuals who wish to consult, modify, or even delete information "
+"concerning them.\n"
+"              "
+msgstr ""
+"\n"
+"                Nous reconnaissons le droit d'accès et de rectification aux "
+"personnes désireuses de consulter, modifier ou même supprimer les "
+"informations les concernant.\n"
+"              "
+
+#: accounts/templates/accounts/politique_confidentilite.html:104
+msgid "Exercising this right can be done:"
+msgstr "L'exercice de ce droit peut se faire :"
+
+#: accounts/templates/accounts/politique_confidentilite.html:108
+msgid "Email: soo.mauve.pro@gmail.com"
+msgstr "Courriel : soo.mauve.pro@gmail.com"
+
+#: accounts/templates/accounts/politique_confidentilite.html:112
+msgid "Security"
+msgstr "Sécurité"
+
+#: accounts/templates/accounts/politique_confidentilite.html:114
+msgid ""
+"\n"
+"                The personal information we collect is stored in a secure "
+"environment. People working for us are required to respect the "
+"confidentiality of your information.\n"
+"              "
+msgstr ""
+"\n"
+"                Les informations personnelles que nous collectons sont "
+"stockées dans un environnement sécurisé. Les personnes travaillant pour nous "
+"sont tenues de respecter la confidentialité de vos informations.\n"
+"              "
+
+#: accounts/templates/accounts/politique_confidentilite.html:119
+msgid ""
+"\n"
+"                To ensure the security of your personal information, we use "
+"the following measures:\n"
+"              "
+msgstr ""
+"\n"
+"                Pour assurer la sécurité de vos informations personnelles, "
+"nous utilisons les mesures suivantes :\n"
+"              "
+
+#: accounts/templates/accounts/politique_confidentilite.html:124
+msgid "SSL protocol"
+msgstr "Protocole SSL"
+
+#: accounts/templates/accounts/politique_confidentilite.html:125
+msgid "SET protocol"
+msgstr "Protocole SET"
+
+#: accounts/templates/accounts/politique_confidentilite.html:126
+msgid "Access management - authorized person"
+msgstr "Gestion des accès - personne autorisée"
+
+#: accounts/templates/accounts/politique_confidentilite.html:127
+msgid "Access management - concerned person"
+msgstr "Gestion des accès - personne concernée"
+
+#: accounts/templates/accounts/politique_confidentilite.html:128
+msgid "Computer backup"
+msgstr "Sauvegarde informatique"
+
+#: accounts/templates/accounts/politique_confidentilite.html:129
+msgid "Username / password"
+msgstr "Nom d'utilisateur / mot de passe"
+
+#: accounts/templates/accounts/politique_confidentilite.html:130
+msgid "Firewall"
+msgstr "Pare-feu"
+
+#: accounts/templates/accounts/politique_confidentilite.html:133
+msgid ""
+"\n"
+"                We are committed to maintaining a high degree of "
+"confidentiality by integrating the latest technological innovations to "
+"ensure the confidentiality of your transactions. However, as no mechanism "
+"offers maximum security, a part of risk is always present when using the "
+"Internet to transmit personal information.\n"
+"              "
+msgstr ""
+"\n"
+"                Nous nous engageons à maintenir un haut degré de "
+"confidentialité en intégrant les dernières innovations technologiques pour "
+"assurer la confidentialité de vos transactions. Cependant, comme aucun "
+"mécanisme n'offre une sécurité maximale, une part de risque est toujours "
+"présente lors de l'utilisation d'Internet pour transmettre des informations "
+"personnelles.\n"
+"              "
+
+#: accounts/templates/accounts/politique_confidentilite.html:138
+msgid ""
+"\n"
+"                We are committed to maintaining a high degree of "
+"confidentiality by integrating the latest technological innovations to "
+"ensure the confidentiality of your transactions. However, since no mechanism "
+"offers maximum security, a risk is always present when using the Internet to "
+"transmit personal information.\n"
+"              "
+msgstr ""
+"\n"
+"                Nous nous engageons à maintenir un haut degré de "
+"confidentialité en intégrant les dernières innovations technologiques pour "
+"assurer la confidentialité de vos transactions. Cependant, comme aucun "
+"mécanisme n'offre une sécurité maximale, un risque est toujours présent lors "
+"de l'utilisation d'Internet pour transmettre des informations personnelles.\n"
+"              "
+
+#: accounts/templates/accounts/politique_confidentilite.html:142
+#: accounts/templates/accounts/politique_confidentilite.html:149
+msgid "Legislation"
+msgstr "Législation"
+
+#: accounts/templates/accounts/politique_confidentilite.html:144
+msgid ""
+"\n"
+"                We are committed to complying with the legislative "
+"provisions set out in:\n"
+"              "
+msgstr ""
+"\n"
+"                Nous nous engageons à respecter les dispositions "
+"législatives énoncées dans :\n"
+"              "
+
+#: accounts/templates/accounts/reset_password.html:21
+msgid "Reset Password"
+msgstr "Réinitialiser le mot de passe"
+
+#: accounts/templates/accounts/reset_password.html:28
+msgid "Mot de passe actuel"
+msgstr "Mot de passe actuel"
+
+#: accounts/templates/accounts/reset_password.html:35
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+#: accounts/templates/accounts/reset_password.html:42
+msgid "Confirm new password"
+msgstr "Confirmer le nouveau mot de passe"
+
+#: accounts/templates/accounts/reset_password.html:59
+msgid "Reset the new password"
+msgstr "Réinitialiser le nouveau mot de passe"
+
+#: accounts/templates/accounts/signup.html:7
+#: accounts/templates/accounts/signup.html:90
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: accounts/templates/accounts/signup.html:27
+msgid "Confirm password"
+msgstr "Confirmer le mot de passe"
+
+#: accounts/templates/accounts/signup.html:44
+msgid "I accept the terms and conditions and the privacy policy"
+msgstr "J'accepte les termes et conditions et la politique de confidentialité"
+
+#: accounts/templates/accounts/signup.html:57
+msgid "Terms of Service"
+msgstr ""
+
+#: accounts/templates/accounts/signup.html:69
+msgid ""
+"By using our website, you accept our privacy policy. This policy explains "
+"how we collect, use, share, and protect your personal information. By "
+"continuing to use our site, you consent to the collection and use of your "
+"data in accordance with this policy."
+msgstr ""
+
+#: accounts/templates/accounts/signup.html:72
+msgid ""
+"We are committed to protecting your personal information and using it solely "
+"within the framework of the services we provide to you. Your data will never "
+"be sold or shared with third parties without your explicit consent."
+msgstr ""
+
+#: accounts/templates/accounts/signup.html:77
+msgid "OK"
+msgstr ""
+
+#: accounts/templates/accounts/signup.html:93
+msgid "Already have an account?"
+msgstr "Vous avez déjà un compte ?"
+
+#: accounts/templates/accounts/signup.html:93
+msgid "Login here."
+msgstr "Connectez-vous ici."
+
+#: dash_admin/models.py:11 dash_admin/models.py:35
+msgid "Sales"
+msgstr "Ventes"
+
+#: dash_admin/models.py:12
+msgid "Categorie"
+msgstr "Catégorie"
+
+#: dash_admin/models.py:13 store/models.py:139
+msgid "Quantity"
+msgstr "Quantité"
+
+#: dash_admin/models.py:14
+msgid "Total_Amount"
+msgstr "Montant total"
+
+#: dash_admin/models.py:15
+msgid "Sales_date"
+msgstr "Date des ventes"
+
+#: dash_admin/models.py:34
+msgid "Sale"
+msgstr "Vente"
+
+#: dash_admin/templates/dash_admin/charts.html:10
+msgid "Average customer cart per day"
+msgstr "Panier moyen par jour"
+
+#: dash_admin/templates/dash_admin/charts.html:13
+msgid "Evolution of the Average Basket per Month"
+msgstr "Évolution du panier moyen par mois"
+
+#: dash_admin/templates/dash_admin/charts.html:20
+#: dash_admin/templates/dash_admin/charts.html:24
+msgid "Evolution of the Average customer cart per Month"
+msgstr "Évolution du panier moyen par mois"
+
+#: env/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr "Messages"
+
+#: env/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Plans du site"
+
+#: env/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Fichiers statiques"
+
+#: env/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: env/lib/python3.12/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: env/lib/python3.12/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr "Ce numéro de page n'est pas un entier"
+
+#: env/lib/python3.12/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr "Ce numéro de page est inférieur à 1"
+
+#: env/lib/python3.12/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr "Cette page ne contient aucun résultat"
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Entrez une valeur valide."
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:104
+#: env/lib/python3.12/site-packages/django/forms/fields.py:760
+msgid "Enter a valid URL."
+msgstr "Entrez une URL valide."
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:165
+msgid "Enter a valid integer."
+msgstr "Entrez un entier valide."
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:176
+msgid "Enter a valid email address."
+msgstr "Entrez une adresse email valide."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: env/lib/python3.12/site-packages/django/core/validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:279
+#: env/lib/python3.12/site-packages/django/core/validators.py:306
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:286
+#: env/lib/python3.12/site-packages/django/core/validators.py:307
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:298
+#: env/lib/python3.12/site-packages/django/core/validators.py:305
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:341
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:347
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:382
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:391
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:400
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:407
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:439
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:457
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:480
+#: env/lib/python3.12/site-packages/django/forms/fields.py:355
+#: env/lib/python3.12/site-packages/django/forms/fields.py:394
+msgid "Enter a number."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:482
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:487
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:492
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:563
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/core/validators.py:624
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/base.py:1477
+#: env/lib/python3.12/site-packages/django/forms/models.py:906
+msgid "and"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/base.py:1479
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/constraints.py:20
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:133
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:134
+msgid "This field cannot be null."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be blank."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:136
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:140
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:179
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1155
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1156
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1158
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1208
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1210
+msgid "String (unlimited)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1314
+msgid "Comma-separated integers"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1415
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1419
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1554
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1423
+msgid "Date (without time)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1550
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1558
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1563
+msgid "Date (with time)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1690
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1692
+msgid "Decimal number"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1853
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1857
+msgid "Duration"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1934
+msgid "File path"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2012
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2014
+msgid "Floating point number"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2054
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2056
+msgid "Integer"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2152
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2169
+msgid "Small integer"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2177
+msgid "IPv4 address"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2208
+msgid "IP address"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2301
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2302
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2304
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2355
+msgid "Positive big integer"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2370
+msgid "Positive integer"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2385
+msgid "Positive small integer"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2401
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2437
+msgid "Text"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2512
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2516
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2520
+msgid "Time"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2628
+msgid "URL"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2652
+msgid "Raw binary data"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2717
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2719
+msgid "Universally unique identifier"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/files.py:232
+msgid "File"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/files.py:393
+msgid "Image"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/json.py:26
+msgid "A JSON object"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/json.py:28
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/related.py:939
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/related.py:941
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/related.py:1235
+msgid "One-to-one relationship"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/related.py:1292
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/related.py:1294
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/db/models/fields/related.py:1342
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: env/lib/python3.12/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:304
+msgid "Enter a whole number."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:475
+#: env/lib/python3.12/site-packages/django/forms/fields.py:1252
+msgid "Enter a valid date."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:498
+#: env/lib/python3.12/site-packages/django/forms/fields.py:1253
+msgid "Enter a valid time."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:525
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:559
+msgid "Enter a valid duration."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:560
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:629
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:630
+msgid "No file was submitted."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:631
+msgid "The submitted file is empty."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:633
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:638
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:702
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:874
+#: env/lib/python3.12/site-packages/django/forms/fields.py:960
+#: env/lib/python3.12/site-packages/django/forms/models.py:1585
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:962
+#: env/lib/python3.12/site-packages/django/forms/fields.py:1081
+#: env/lib/python3.12/site-packages/django/forms/models.py:1583
+msgid "Enter a list of values."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:1082
+msgid "Enter a complete value."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:1321
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/fields.py:1351
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: env/lib/python3.12/site-packages/django/forms/forms.py:94
+msgid ":"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/forms.py:231
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/forms/formsets.py:484
+#: env/lib/python3.12/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:899
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:904
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:911
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:920
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:1357
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:1448
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/models.py:1587
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/utils.py:227
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/widgets.py:461
+msgid "Clear"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/widgets.py:462
+msgid "Currently"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/widgets.py:463
+msgid "Change"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/widgets.py:800
+msgid "Unknown"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/widgets.py:801
+msgid "Yes"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/forms/widgets.py:802
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:876
+msgid "yes,no,maybe"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:906
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:923
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:925
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:927
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:929
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:931
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/template/defaultfilters.py:933
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/text.py:123
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/text.py:323
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: env/lib/python3.12/site-packages/django/utils/text.py:342
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:64
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:115
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:349
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/static.py:68
+#: env/lib/python3.12/site-packages/django/views/templates/directory_index.html:8
+#: env/lib/python3.12/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:229
+msgid "Django Documentation"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:239
+msgid "Get started with Django"
+msgstr "Commnecer avec Django"
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:247
+msgid "Django Community"
+msgstr "Communauté Django"
+
+#: env/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr "Connectez-vous, obtenez de l’aide ou contribuez"
+
+#: env/lib/python3.12/site-packages/django_recaptcha/fields.py:20
+#: env/lib/python3.12/site-packages/django_recaptcha/fields.py:21
+msgid "Error verifying reCAPTCHA, please try again."
+msgstr "Erreur de vérification reCAPTCHA, veuillez réessayer."
+
+#: mail/models.py:7
+msgid "Subject"
+msgstr "Sujet"
+
+#: mail/models.py:8
+msgid "Message"
+msgstr "Message"
+
+#: mail/models.py:10 store/models.py:122
+msgid "Created At"
+msgstr "Crée le"
+
+#: mail/models.py:11
+msgid "Edited At"
+msgstr "Edité le"
+
+#: mail/models.py:18
+msgid "Emails"
+msgstr "Email"
+
+#: mail/templates/mail/contact.html:8 templates/user_admin.html:73
+msgid "Contact Us"
+msgstr "Contacter nous"
+
+#: mail/templates/mail/contact.html:9
+msgid ""
+"Feel free to contact us! Submit your questions here and we'll get back to "
+"you as soon as possible."
+msgstr ""
+"N'hésitez pas à nous contacter ! Soumettez vos questions ici et nous vous "
+"répondrons dès que possible."
+
+#: mail/templates/mail/contact.html:13
+msgid "Send Us a Message"
+msgstr "Envoyer nous un message"
+
+#: mail/templates/mail/user_confirmation_email.html:5
+msgid "Thank you for your message"
+msgstr "Merci pour votre message"
+
+#: mail/templates/mail/user_confirmation_email.html:6
+msgid "We have received your inquiry and will respond to you shortly."
+msgstr "Nous avons reçu votre demande et vous répondrons sous peu."
+
+#: mail/templates/mail/user_confirmation_email.html:8
+msgid "welcome image"
+msgstr "Bienvenue"
+
+#: mail/templates/mail/welcome_email.html:5
+msgid "Welcome to our platform"
+msgstr "Bienevenue sur notre plateform"
+
+#: mail/templates/mail/welcome_email.html:8 store/templates/store/index.html:10
+#: store/templates/store/index.html:14
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: mail/templates/mail/welcome_email.html:9
+msgid ""
+"Thank you for registering on our site. We’re delighted to have you here."
+msgstr ""
+"Merci de votre inscription sur notre site. Nous sommes ravis de vous "
+"accueillir."
+
+#: mail/templates/mail/welcome_email.html:10
+msgid "As promised here is the promo code at registration  :"
+msgstr ""
+
+#: mail/templates/mail/welcome_email.html:12
+msgid "This code is valid until 30/09/2024"
+msgstr ""
+
+#: map/models.py:6
+msgid "Store Name"
+msgstr "Nom du magasin"
+
+#: map/models.py:8 store/templates/store/partial_home_delivery.html:51
+msgid "Zipcode"
+msgstr "Code Postal"
+
+#: map/models.py:9
+msgid "Address"
+msgstr "Addresse"
+
+#: map/models.py:10
+msgid "Latitude"
+msgstr "Latitude"
+
+#: map/models.py:11
+msgid "Longitude"
+msgstr "Longitude"
+
+#: map/models.py:12
+msgid "Opening Hours"
+msgstr "Horaires d'ouvertures"
+
+#: map/models.py:13 store/templates/store/details.html:119
+msgid "Description"
+msgstr "Descrption"
+
+#: map/models.py:14
+msgid "City Thumbnail"
+msgstr "Image ville"
+
+#: map/models.py:15
+msgid "Shop Image"
+msgstr "Image magasin"
+
+#: map/models.py:21
+msgid "Store"
+msgstr "Magasin"
+
+#: map/models.py:22
+msgid "Stores"
+msgstr "Magasins"
+
+#: map/templates/map/boutique_details.html:13
+msgid "Adress :"
+msgstr "Addresse"
+
+#: map/templates/map/boutique_details.html:16
+#: map/templates/map/boutique_details.html:42
+msgid "Opening hours :"
+msgstr "Horaires d'ouvertures"
+
+#: map/templates/map/boutique_details.html:47
+msgid "The details of this shop are not available at the moment."
+msgstr ""
+
+#: map/templates/map/maps.html:7
+msgid "Our stores"
+msgstr "Magasins"
+
+#: map/templates/map/maps.html:10
+#, python-format
+msgid ""
+"\n"
+"        Welcome to LoremBoutique, your ultimate destination for streetwear "
+"and urban clothing. \n"
+"        Whether you are looking for the latest trends or classic pieces to "
+"complete your wardrobe, we have what you need.\n"
+"        We have %(boutiques_count)s shops available, offering a wide range "
+"of clothing, shoes and accessories from renowned brands.\n"
+"        "
+msgstr ""
+"Bienvenue chez LoremBoutique, votre destination ultime pour les vêtements "
+"streetwear et urbains. Que vous recherchiez les dernières tendances ou des "
+"pièces classiques pour compléter votre garde-robe, nous avons ce qu'il vous "
+"faut.\n"
+"Nous disposons de %(boutiques_count)s boutiques, offrant une large gamme de "
+"vêtements, chaussures et accessoires de marques renommées."
+
+#: map/templates/map/maps.html:18
+msgid ""
+"\n"
+"            Come and discover our collections and be inspired by our "
+"exclusive selection.\n"
+"            Whether you’re passionate about sneakers, a fan of streetwear "
+"clothing or simply looking for your next look,. LoremBoutique is the perfect "
+"place for you. \n"
+"            Join us for an unforgettable shopping experience and find your "
+"style at Street Style Boutique!\n"
+"            "
+msgstr ""
+"Venez découvrir nos collections et laissez-vous inspirer par notre sélection "
+"exclusive. Que vous soyez passionné de sneakers, amateur de vêtements "
+"streetwear ou simplement à la recherche de votre prochain look, "
+"LoremBoutique est l'endroit idéal pour vous. Rejoignez-nous pour une "
+"expérience de shopping inoubliable et trouvez votre style chez Street Style "
+"Boutique!"
+
+#: store/models.py:29 store/models.py:36 store/models.py:100
+msgid "Size"
+msgstr "Taille"
+
+#: store/models.py:37 store/models.py:88
+msgid "Sizes"
+msgstr "Tailles"
+
+#: store/models.py:55 store/models.py:80 store/templates/store/details.html:143
+#: store/templates/store/filter_bar.html:31
+msgid "Category"
+msgstr "Categorie"
+
+#: store/models.py:56
+msgid "Categories"
+msgstr "Categories"
+
+#: store/models.py:59
+msgid "Name"
+msgstr "Nom"
+
+#: store/models.py:60
+msgid "Slug"
+msgstr "Slug"
+
+#: store/models.py:61
+msgid "Price"
+msgstr "Prix"
+
+#: store/models.py:62
+msgid "Short Description"
+msgstr "Description courtes"
+
+#: store/models.py:63
+msgid "Long Description"
+msgstr "Description longue"
+
+#: store/models.py:64
+msgid "Material"
+msgstr "Matière"
+
+#: store/models.py:65 store/templates/store/details.html:135
+msgid "Color"
+msgstr "Couleur"
+
+#: store/models.py:66
+msgid "Thumbnail 1"
+msgstr "Image 1"
+
+#: store/models.py:67
+msgid "Thumbnail 2"
+msgstr "Image 2"
+
+#: store/models.py:68
+msgid "Thumbnail 3"
+msgstr "Image 3"
+
+#: store/models.py:69
+msgid "Thumbnail 4"
+msgstr "Image 4"
+
+#: store/models.py:70
+msgid "Updated At"
+msgstr "Mis-à-jour"
+
+#: store/models.py:71
+msgid "Promo"
+msgstr "Promotion"
+
+#: store/models.py:72
+msgid "Promo Percentage"
+msgstr "Pourcentage de promotion"
+
+#: store/models.py:73
+msgid "Promo Price"
+msgstr "Prix Promo"
+
+#: store/models.py:74
+msgid "Stripe ID"
+msgstr "Stripe ID"
+
+#: store/models.py:95 store/models.py:99 store/models.py:137
+msgid "Product"
+msgstr "Produit"
+
+#: store/models.py:96
+msgid "Products"
+msgstr "Produit"
+
+#: store/models.py:101
+msgid "Stock"
+msgstr "Stock"
+
+#: store/models.py:107 store/models.py:138
+msgid "Product Size"
+msgstr "Taille Produit"
+
+#: store/models.py:108
+msgid "Product Sizes"
+msgstr "Tailles Produit"
+
+#: store/models.py:119
+msgid "Code"
+msgstr "Code"
+
+#: store/models.py:120
+msgid "Discount"
+msgstr "Réduction"
+
+#: store/models.py:121
+msgid "Is Active"
+msgstr "Actif"
+
+#: store/models.py:123
+msgid "Expires At"
+msgstr "Expire le"
+
+#: store/models.py:129
+msgid "Coupon"
+msgstr "Coupon"
+
+#: store/models.py:130 store/models.py:178
+msgid "Coupons"
+msgstr "Coupons"
+
+#: store/models.py:142 store/models.py:172
+msgid "Ordered"
+msgstr "Commnadé"
+
+#: store/models.py:144 store/models.py:173
+msgid "Ordered Date"
+msgstr "Date de commande"
+
+#: store/models.py:145
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#: store/models.py:151
+msgid "Cart Item"
+msgstr "Items au panier"
+
+#: store/models.py:152
+msgid "Cart Items"
+msgstr "Items au panier"
+
+#: store/models.py:171
+msgid "Orders"
+msgstr "Commandes"
+
+#: store/models.py:175
+msgid "Total"
+msgstr "Total"
+
+#: store/models.py:177
+msgid "Total Quantity"
+msgstr "Quantité Total"
+
+#: store/models.py:248
+msgid "Cart"
+msgstr "Panier"
+
+#: store/models.py:249
+msgid "Carts"
+msgstr "Paniers"
+
+#: store/models.py:263
+msgid "Relay Point"
+msgstr "Points Relai"
+
+#: store/models.py:264
+msgid "Relay Points"
+msgstr "Points Relais"
+
+#: store/templates/store/cart.html:25
+msgid "Your cart"
+msgstr "Votre panier"
+
+#: store/templates/store/cart.html:46
+msgid "Size :"
+msgstr "Taille :"
+
+#: store/templates/store/cart.html:58
+msgid "Close"
+msgstr "Fermer"
+
+#: store/templates/store/cart.html:64
+msgid "Are you sure you want to remove this product from the cart?"
+msgstr "Êtes-vou sur de vouloir supprimer ce produit ?"
+
+#: store/templates/store/cart.html:66
+msgid "Yes, I'm sure"
+msgstr "Oui, je suis sur(e)."
+
+#: store/templates/store/cart.html:68
+msgid "Cancel"
+msgstr "Retour"
+
+#: store/templates/store/cart.html:94
+msgid "Subtotal :"
+msgstr "Sous-total"
+
+#: store/templates/store/cart.html:108
+msgid "Total :"
+msgstr "Total :"
+
+#: store/templates/store/cart.html:122
+#: store/templates/store/choose_relay.html:7
+msgid "Choose your shipment destination"
+msgstr "Choississez votre lieu de livraison"
+
+#: store/templates/store/category.html:40
+#: store/templates/store/category.html:115
+#: store/templates/store/category.html:185
+#: store/templates/store/products.html:69
+#: store/templates/store/recherche.html:68
+msgid "Previous"
+msgstr "Précédent"
+
+#: store/templates/store/category.html:48
+#: store/templates/store/category.html:123
+#: store/templates/store/category.html:202
+#: store/templates/store/products.html:86
+#: store/templates/store/recherche.html:83
+msgid "Next"
+msgstr "Suivant"
+
+#: store/templates/store/category.html:54
+msgid "Our products for men"
+msgstr "Nos produits pour homme"
+
+#: store/templates/store/category.html:129
+msgid "Our products for women"
+msgstr "Nos produits pour femme"
+
+#: store/templates/store/category.html:172
+#: store/templates/store/products.html:56
+#: store/templates/store/recherche.html:55
+msgid "Showing"
+msgstr "Voir"
+
+#: store/templates/store/category.html:174
+#: store/templates/store/products.html:58
+#: store/templates/store/recherche.html:57
+msgid "to"
+msgstr "sur"
+
+#: store/templates/store/category.html:176
+#: store/templates/store/products.html:60
+#: store/templates/store/recherche.html:59
+msgid "of"
+msgstr ""
+
+#: store/templates/store/category.html:178
+#: store/templates/store/products.html:62
+#: store/templates/store/recherche.html:61
+msgid "results"
+msgstr "résultat"
+
+#: store/templates/store/choose_relay.html:15
+msgid "Choose your shipping method"
+msgstr "Sélectionner votre méthode de livraison"
+
+#: store/templates/store/choose_relay.html:19
+msgid "Select delivery option"
+msgstr "Valider les informations de livraison"
+
+#: store/templates/store/choose_relay.html:20
+msgid "Relay"
+msgstr "Relai"
+
+#: store/templates/store/choose_relay.html:21
+msgid "Home"
+msgstr "Aller à l'accueil"
+
+#: store/templates/store/choose_relay.html:47
+msgid "Recently viewed"
+msgstr "Consulté récemment"
+
+#: store/templates/store/choose_relay.html:70
+#: store/templates/store/index.html:60
+#: store/templates/store/partial_subcategorie.html:21
+#: store/templates/store/products.html:28
+#: store/templates/store/recherche.html:27
+msgid "See details"
+msgstr "Voir détails"
+
+#: store/templates/store/confirm_paiement.html:13
+msgid "Order summary :"
+msgstr "Récapitulatif de commande"
+
+#: store/templates/store/confirm_paiement.html:33
+#: store/templates/store/partial_relay_point.html:41
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: store/templates/store/confirm_paiement.html:42
+msgid "Pay"
+msgstr "Pay"
+
+#: store/templates/store/details.html:66
+msgid "Available size"
+msgstr "Tailles disponible"
+
+#: store/templates/store/details.html:76
+msgid "Stock-out"
+msgstr "Rupture"
+
+#: store/templates/store/details.html:78
+msgid "Available"
+msgstr "Dispo"
+
+#: store/templates/store/details.html:87
+msgid "Choose your size"
+msgstr "Sélectionner votre langue"
+
+#: store/templates/store/details.html:96
+msgid "Add to Cart"
+msgstr "Ajouter au panier"
+
+#: store/templates/store/details.html:127
+msgid "Product material"
+msgstr "Matière"
+
+#: store/templates/store/details.html:157
+msgid "Maybe you will like ?"
+msgstr "Vous aimerez peut-être"
+
+#: store/templates/store/filter_bar.html:5
+msgid "View all filters"
+msgstr "Voir tout les filtres"
+
+#: store/templates/store/filter_bar.html:15
+msgid "Filter by :"
+msgstr "Filtrer par "
+
+#: store/templates/store/filter_bar.html:26
+msgid "Select your filter:"
+msgstr "Choissisez votre filtre"
+
+#: store/templates/store/filter_bar.html:33
+msgid "All categories"
+msgstr "Categories"
+
+#: store/templates/store/filter_bar.html:40
+msgid "Genre"
+msgstr "Genre"
+
+#: store/templates/store/filter_bar.html:42
+#: store/templates/store/filter_bar.html:51
+msgid "All"
+msgstr "Tout"
+
+#: store/templates/store/filter_bar.html:49
+msgid "Price range"
+msgstr "Prix"
+
+#: store/templates/store/filter_bar.html:59
+msgid "By size"
+msgstr "Par taille"
+
+#: store/templates/store/filter_bar.html:74
+msgid "Filter"
+msgstr "Filtrer par "
+
+#: store/templates/store/index.html:24
+msgid "Woman"
+msgstr "Femme"
+
+#: store/templates/store/index.html:26 store/templates/store/index.html:33
+msgid "Let's see"
+msgstr "Voir"
+
+#: store/templates/store/index.html:31
+msgid "Men"
+msgstr "Homme"
+
+#: store/templates/store/index.html:40
+msgid "Latest products added"
+msgstr "Dernier produits ajoutées"
+
+#: store/templates/store/partial_home_delivery.html:22
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: store/templates/store/partial_home_delivery.html:29
+msgid "Telephone number"
+msgstr "Numéro de téléphone"
+
+#: store/templates/store/partial_home_delivery.html:36
+msgid "Delivery address"
+msgstr "Adresse de livraison"
+
+#: store/templates/store/partial_home_delivery.html:58
+msgid "Country"
+msgstr "Pays"
+
+#: store/templates/store/partial_home_delivery.html:68
+msgid "Validate the delivery information"
+msgstr "Valider les informations de livraison"
+
+#: store/templates/store/partial_product_notfound.html:6
+msgid "404"
+msgstr "404"
+
+#: store/templates/store/partial_product_notfound.html:7
+msgid "Product Not Found"
+msgstr "Produit non trouvé"
+
+#: store/templates/store/partial_product_notfound.html:8
+msgid "We're sorry, but the product you were looking for could not be found."
+msgstr "Nous sommes désolé, le produit rechercher n'a pas être trouvé"
+
+#: store/templates/store/partial_product_notfound.html:10
+msgid "Go Home"
+msgstr "Aller à l'accueil"
+
+#: store/templates/store/partial_relay_point.html:11
+msgid "Relay point selected :"
+msgstr "Point relais selectionné"
+
+#: store/templates/store/partial_relay_point.html:15
+msgid "Relay Point Name : "
+msgstr "Point relais : "
+
+#: store/templates/store/partial_relay_point.html:19
+msgid "Address : "
+msgstr "Addresse : "
+
+#: store/templates/store/partial_relay_point.html:23
+msgid "Zip Code : "
+msgstr "Code postal : "
+
+#: store/templates/store/partial_relay_point.html:27
+msgid "City : "
+msgstr "Ville : "
+
+#: store/templates/store/partial_relay_point.html:31
+msgid "Country : "
+msgstr "Pays : "
+
+#: store/templates/store/products.html:6
+msgid "All products"
+msgstr "Tout les produits"
+
+#: store/templates/store/recherche.html:5
+msgid "Results for "
+msgstr "Résulat pour "
+
+#: templates/base.html:39
+msgid "View cart"
+msgstr "Voir panier"
+
+#: templates/base.html:59 templates/user_admin.html:32
+msgid "Shop"
+msgstr "Shop"
+
+#: templates/base.html:65 templates/user_admin.html:50
+msgid "My account"
+msgstr "Mon compte"
+
+#: templates/base.html:71
+msgid "Login"
+msgstr "Authentification"
+
+#: templates/base.html:105
+msgid "Choose your language"
+msgstr "Sélectionner votre langue"
+
+#: templates/base.html:110 templates/user_admin.html:97
+msgid "English"
+msgstr "Anglais"
+
+#: templates/base.html:113 templates/user_admin.html:100
+msgid "French"
+msgstr "Français"
+
+#: templates/base.html:116 templates/user_admin.html:103
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: templates/user_admin.html:41
+msgid "My orders"
+msgstr "Commandes"
+
+#: templates/user_admin.html:57
+msgid "Delete account"
+msgstr "Mon compte"
+
+#: templates/user_admin.html:60
+msgid "Privacy policy"
+msgstr "Politque de confidentialité"
+
+#: templates/user_admin.html:63
+msgid "Legal information"
+msgstr "Mentions légale"
+
+#: templates/user_admin.html:80
+msgid "Views all shops"
+msgstr "Voir toutes les boutiques"
+
+#: templates/user_admin.html:89
+msgid "Logout"
+msgstr "Déconnexion"
+
+#~ msgid "Add to cart"
+#~ msgstr "Ajouter au panier"
+
+#~ msgid "No products found"
+#~ msgstr "Tout les produits"
+
+#~ msgid "Search"
+#~ msgstr "Rechercher"
+
+#~ msgid "View all"
+#~ msgstr "Voir panier"
+
+#~ msgid "Forgot Password"
+#~ msgstr "Mot de passe oublié"
+
+#~ msgid "My contact details"
+#~ msgstr "Mes informations de contact"
+
+#~ msgid "If you have any questions do not hesitate to contact us."
+#~ msgstr "Pour toute question, n'hésitez pas à nous contacter."
+
+#~ msgid "Less than £100"
+#~ msgstr "Moins de 100€"
+
+#~ msgid "Between £100 and £200"
+#~ msgstr "Entre 100€ et 200€"
+
+#~ msgid "More than £200"
+#~ msgstr "Plus de 200€"
+
+#, python-format
+#~ msgid "-50%% of promotion"
+#~ msgstr "50% de réduction"
+
+#~ msgid "See detail"
+#~ msgstr "Voir détails"
+
+#~ msgid "Profile"
+#~ msgstr "Profil"
