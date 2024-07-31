@@ -26,7 +26,8 @@ from django.conf import settings
 from django.core.paginator import Paginator
 import xml.etree.ElementTree as ET
 import json
-import os
+
+import environ
 import stripe
 stripe.api_key = settings.STRIPE_API_KEY
 simtao_api_key = settings.SIMTAO_API_KEY
@@ -457,7 +458,7 @@ def stripe_webhook(request):
     # en-tete de la requete
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
-    endpoint_secret = 'whsec_5348b85f2f8ff0b8c0f4be38650955382f2447ae1bb7d0ca8c69ca1a8d8af83c'
+    endpoint_secret= settings.END_POINT_WEBHOOK
 
 
     try:
