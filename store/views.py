@@ -236,13 +236,13 @@ def add_to_cart(request, slug):
 
 def recherche_produit(request):
     search_item_user = request.GET.get('search-item')
-    search_item = escape(search_item_user)
+    search_item = escape(search_item_user) if search_item_user else ''
     product_request = Product.objects.none()  
     
     if search_item:
         product_request = Product.objects.filter(name__icontains=search_item)
-    num_results = product_request.count() if search_item else 0
     
+    num_results = product_request.count() if search_item else 0
     paginator = Paginator(product_request, 9)
     page = request.GET.get('page')
     product_request = paginator.get_page(page)
