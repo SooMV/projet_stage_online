@@ -2,8 +2,8 @@
 {% load i18n %}
 
 {% block content %}
-<div class="flex justify-center items-center mx-auto my-28"> 
-    <div class="p-8 space-y-6 bg-gray-200 rounded-lg shadow-md w-2/6">
+<div class="flex justify-center items-center mx-auto my-28 w-auto py-2"> 
+    <div class="p-8 space-y-6 bg-gray-200 rounded-lg shadow-md w-4/5">
         <h1 class="text-3xl font-bold text-black text-center">Connexion</h1>
 
         <form class="space-y-6" method="POST">
@@ -25,7 +25,7 @@
                     {% endfor %}
                 </div>
                 <br>
-                <div>
+                <div class="flex align-center justify-center">
                     {{ form.captcha }}
                     {% for error in form.captcha.errors %}
                         <p class="text-red-500">{{ error }}</p>
