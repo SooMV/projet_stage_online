@@ -30,6 +30,8 @@ import json
 import environ
 import stripe
 stripe.api_key = settings.STRIPE_API_KEY
+stripe.endpoint =settings. END_POINT_WEBHOOK
+
 
 
 # Create your views here.
@@ -458,7 +460,7 @@ def stripe_webhook(request):
     # en-tete de la requete
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
-    endpoint_secret= settings.END_POINT_WEBHOOK
+    endpoint_secret= stripe.endpoint
 
 
     try:
