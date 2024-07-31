@@ -34,10 +34,14 @@ class RelayForm(forms.ModelForm):
         model = RelayPoint
         fields = ['name', 'address', 'postcode', 'city', 'country', ]
         
-class RechercheProduitForm(forms.Form):
-    query = forms.CharField(label='Recherche de produit', max_length=100)
-    class Meta:
-        model = Product
+class SearchForm(forms.Form):
+    search_item = forms.CharField(
+        label='',
+        widget=forms.TextInput(attrs={
+            'placeholder': 'Search for the product you want...',
+            'class': 'block p-2.5 w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm sm:text-base rounded-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500',
+        })
+    )
         
 class ProductCategorieForm(forms.Form):
     category = forms.CharField()

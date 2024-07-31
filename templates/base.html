@@ -120,9 +120,8 @@
                 <div class="w-11/12 sm:w-3/6 mx-auto mb-8 sm:mb-16 mt-10 sm:mt-20">
                     <form action="{% url 'search_product' %}" method="GET">
                         <div class="flex items-center justify-center relative">
-                            <label for="search" class="block mb-2 text-sm font-medium text-white dark:text-white"></label>
-                            <input placeholder="Search for the product you want..." type="search" name="search-item" class="block p-2.5 w-full  bg-gray-50 border border-gray-300 text-gray-900 text-sm sm:text-base rounded-md focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
-                            <button class="absolute top-0 end-0 h-full p-2.5 bg-green-600 text-white   rounded-r-md transition-all duration-500 hover:bg-green-700" type="submit">
+                            {{ form.search_item }}
+                            <button class="absolute top-0 end-0 h-full p-2.5 bg-green-600 text-white rounded-r-md transition-all duration-500 hover:bg-green-700" type="submit">
                                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                                 </svg>
