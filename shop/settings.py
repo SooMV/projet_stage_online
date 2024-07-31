@@ -20,6 +20,11 @@ env = environ.Env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 environ.Env.read_env(BASE_DIR/".env")
 # Quick-start development settings - unsuitable for production
@@ -70,6 +75,7 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware', 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -166,6 +172,11 @@ EMAIL_USE_TLS = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+# ajout du dossier static pour le CSS
+STATICFILES_DIRS = [ BASE_DIR / "static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -182,12 +193,10 @@ EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 STRIPE_API_KEY = env("STRIPE_API_KEY")
 END_POINT_WEBHOOK = env("END_POINT_WEBHOOK")
+RECAPTCHA_PUBLIC_KEY = env("RECAPTCHA_PUBLIC_KEY")
+RECAPTCHA_PRIVATE_KEY = env("RECAPTCHA_PRIVATE_KEY")
 
 
-
-
-# ajout du dossier static pour le CSS
-STATICFILES_DIRS = [ BASE_DIR / "static"]
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'bg-blue-100 border border-blue-400 text-blue-700',
@@ -204,8 +213,7 @@ RECAPTCHA_ERROR_MSG = {
     'connection_error': 'Une erreur de connexion s\'est produite. Veuillez vérifier votre connexion Internet et réessayer.'
 }
 
-RECAPTCHA_PUBLIC_KEY = '6LciBPEpAAAAALKAmBLjU44Zo_fIyiqXk2_L7clV'
-RECAPTCHA_PRIVATE_KEY = '6LciBPEpAAAAAOMKjnBjRzPu3HrufAkTHHd44HJm'
+
 
 
 JAZZMIN_SETTINGS = {

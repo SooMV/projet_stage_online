@@ -1,0 +1,53 @@
+.link_nav{
+    color:#000 !important;
+}
+#img_homme, #img_femme{
+    width: 450px;
+    border-radius: 20px !important;
+    filter: blur(0.25px) brightness(100%) contrast(120%) opacity(81%) 
+  
+}
+
+.text-img{
+    top: 40%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn-cta-hompage{
+    top: 70%; left: 50%; transform: translate(-50%, -50%);
+}
+
+.responsive-recaptcha {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.body_bg{
+    background: linear-gradient(to right, #b2f5ea, #63b3ed);
+}
+.custom-container {
+    width: 75% !important;
+    height: 50% !important;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+   
+
+   
+
+    .table-container {
+        padding: 0 1rem;
+    }
+    
+}
