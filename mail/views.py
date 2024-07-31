@@ -5,6 +5,9 @@ from django.utils.html import strip_tags
 from django.conf import settings
 from django.contrib import messages
 
+from django.contrib.auth.decorators import login_required
+
+@login_required
 def contact_us(request):
     if request.method == "POST":
         name = request.POST.get('name', '')

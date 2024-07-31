@@ -86,8 +86,9 @@ def profile_view(request):
     return render(request, 'templates/user_admin.html', context)
 
 @login_required(login_url="../login/")
+#Ici login_url sera le lien de la redirection 
+
 def index(request):
-   
     return render(request, 'accounts/index.html')
 
 
@@ -95,7 +96,7 @@ def index(request):
 def my_orders(request):
     user = request.user
     orders = CartItem.objects.filter(user = user, ordered = True)
-    print(orders)
+    
     return render(request,'accounts/my_order.html', context={ "orders" : orders})
 
 

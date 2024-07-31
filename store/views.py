@@ -12,7 +12,7 @@ import requests
 from accounts.models import Customer, ShippingAddress
 from store.models import CartItem, Product, Categorie, ProductFilter, ProductTaille, Cart, Coupons, RelayPoint, Taille
 from django.contrib import messages
-from store.forms import   CartItemForm, RelayForm,  SearchForm
+from store.forms import  RechercheProduitForm, CartItemForm, RelayForm, ProductCategorieForm
 from django.views.generic.list import ListView
 from django.utils.translation import gettext as _ 
 from django.views.decorators.csrf import csrf_exempt
@@ -235,9 +235,8 @@ def add_to_cart(request, slug):
     return redirect(reverse("product", kwargs={'slug': slug}))
 
 def recherche_produit(request):
-    form = SearchForm(request.GET or None)
-    search_item = form.data.get('search-item', '')
-    search_item = escape(search_item)
+    search_item_user = request.GET.get('search-item')
+    search_item = escape(search_item_user)
     product_request = Product.objects.none()  
     
     if search_item:
@@ -249,7 +248,6 @@ def recherche_produit(request):
     product_request = paginator.get_page(page)
     
     context = {
-        'form': form,
         'resultats': product_request, 
         'num_results': num_results, 
         'search_item': search_item
