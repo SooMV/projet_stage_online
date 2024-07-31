@@ -30,7 +30,7 @@ import json
 import environ
 import stripe
 stripe.api_key = settings.STRIPE_API_KEY
-simtao_api_key = settings.SIMTAO_API_KEY
+
 
 # Create your views here.
 
