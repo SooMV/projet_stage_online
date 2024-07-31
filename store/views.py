@@ -22,7 +22,7 @@ from django.utils import translation
 from django.template.loader import render_to_string
 from django.views.decorators.csrf import csrf_protect
 from django.conf import settings
-
+from django.utils.html import escape
 from django.core.paginator import Paginator
 import xml.etree.ElementTree as ET
 import json
@@ -235,7 +235,8 @@ def add_to_cart(request, slug):
     return redirect(reverse("product", kwargs={'slug': slug}))
 
 def recherche_produit(request):
-    search_item = request.GET.get('search-item')
+    search_item_user = request.GET.get('search-item')
+    search_item = escape(search_item_user)
     product_request = Product.objects.none()  
     
     if search_item:
