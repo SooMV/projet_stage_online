@@ -48,7 +48,7 @@ WSGI_APPLICATION = "shop.wsgi.application"
 
 INSTALLED_APPS = [
     'jazzmin',
-    'django_filter',
+    'django_filters',
     "django.contrib.admin",
     "django.contrib.sites",
     "django.contrib.redirects",
