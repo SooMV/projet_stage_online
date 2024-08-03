@@ -5,7 +5,6 @@ from store.models import Categorie, Product, ProductTaille, Taille
 
 class PriceFilter(django_filters.Filter):
     def filter(self, qs, value):
-        print(f"Filtering with value: {value}")  
         if value in (None, ''):
             return qs
         elif value == 'lt100':

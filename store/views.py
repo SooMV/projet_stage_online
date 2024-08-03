@@ -164,13 +164,13 @@ def ajax_size_detail(request, product_id):
 #     def get_queryset(self):
 #         return Product.objects.filter(price__lt=100)  
 
-# # Filtre de recherche : entre 100€ et 200€
-# class ProductsBetween100And200View(ListView):
-#     model = Product
-#     template_name = 'store/between_100_and_200.html'
+# Filtre de recherche : entre 100€ et 200€
+class ProductsBetween100And200View(ListView):
+    model = Product
+    template_name = 'store/between_100_and_200.html'
 
-#     def get_queryset(self):
-#         return Product.objects.filter(price__gte=100, price__lte=200)
+    def get_queryset(self):
+        return Product.objects.filter(price__gte=100, price__lte=200)
     
     
 
