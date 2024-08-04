@@ -2289,7 +2289,7 @@ msgstr "Dispo"
 
 #: store/templates/store/details.html:87
 msgid "Choose your size"
-msgstr "Sélectionner votre langue"
+msgstr "Sélectionner votre taille"
 
 #: store/templates/store/details.html:96
 msgid "Add to Cart"
