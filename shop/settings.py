@@ -15,7 +15,7 @@ import os
 
 from pathlib import Path
 import environ
-import dj_database_url
+# import dj_database_url
 # Customisation des messages flash
 from django.contrib.messages import constants as messages
 

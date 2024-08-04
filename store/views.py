@@ -155,50 +155,16 @@ def ajax_size_detail(request, product_id):
     }
     return JsonResponse(data, safe=False)
 
-# # Filtre de recherche : -100€
-# class ProductUnder100View(ListView):
-#     model = Product 
-#     template_name = 'store/under_100.html'
-    
-    
-#     def get_queryset(self):
-#         return Product.objects.filter(price__lt=100)  
 
-# Filtre de recherche : entre 100€ et 200€
-class ProductsBetween100And200View(ListView):
-    model = Product
-    template_name = 'store/between_100_and_200.html'
-
-    def get_queryset(self):
-        return Product.objects.filter(price__gte=100, price__lte=200)
-    
-    
-
-# # Filtre de recherche : + de 200€
-# class ProductsAbove200View(ListView):
-#     model = Product
-#     template_name = 'store/above_200.html'
-
-#     def get_queryset(self):
-#         return Product.objects.filter(price__gt=200)
-
-# Filtre de recherche : Produit en promotion -50%  
 class Products50PercentOffView(ListView):
     model = Product
     template_name = 'store/50_percent_off.html'
+    context_object_name = 'products'
 
     def get_queryset(self):
         return Product.objects.filter(promo=True, percent_promo=50)
     
-# # Filtre de recherche : Produit par taille
-# class ProductsBySizeView(ListView):
-#     model = Product
-#     template_name = 'store/templates/store/products_by_size.html'
-#     context_object_name = 'products'
 
-#     def get_queryset(self):
-#         size = self.kwargs.get('size')
-#         return Product.objects.filter(sizes__contains=size)
     
 def add_to_cart(request, slug): 
     user = request.user

@@ -59,6 +59,11 @@
                             {% translate "Shop" %}
                         </a>
                     </li>
+                    <li>
+                        <a href="{% url 'products_50_percent_off' %}" class="block py-2 px-3 rounded  text-gray-900 hover:bg-indigo-500 hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                            {% translate "All products promotions" %}
+                        </a>
+                    </li>
                     {% if user.is_authenticated %}
                     <li>
                         <a href="{% url 'profile' %}" class="block py-2 px-3 rounded text-gray-900 hover:bg-indigo-500 hover:text-white dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">

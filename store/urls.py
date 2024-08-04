@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import (
-    recherche_produit, cart, products,
+    Products50PercentOffView, recherche_produit, cart, products,
     category_view, stripe_webhook, create_checkout_session, checkout_success,
     product_detail, add_to_cart, load_delivery_option, confirm_paiement,
     confirm_home_delivery, confirm_relay_delivery, ajax_update_quantities,
@@ -28,6 +28,7 @@ urlpatterns = [
     path('confirm_home_delivery/', confirm_home_delivery, name='confirm_home_delivery'),
     path('confirm_relay_delivery/', confirm_relay_delivery, name='confirm_relay_delivery'),
 
+    path('50-percent-off/', Products50PercentOffView.as_view(), name='products_50_percent_off'),
     path("cart/ajax_update_quantities", ajax_update_quantities, name="ajax_update_quantities"),
     path('available-sizes/<int:product_id>/', ajax_size_detail, name='available-sizes'),
     path("cart/update-quantities", update_quantities, name="update-quantities"),
