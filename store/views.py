@@ -309,7 +309,7 @@ def ajax_update_quantities(request ):
         }
             break
 
-    print(response_data)
+    print('my response',response_data)
 
     return JsonResponse(response_data)
 
