@@ -29,8 +29,6 @@ class ProductAdmin(admin.ModelAdmin):
     get_stock.short_description = 'Stock'
 
 
-@admin.register(Taille)
-
 @admin.register(ProductTaille)
 class ProductTailleAdmin(admin.ModelAdmin):
     list_display = ('product', 'taille', 'stock')
