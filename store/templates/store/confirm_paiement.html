@@ -16,8 +16,17 @@
         <div class="flex justify-between align-center">
             <p class="font-manrope font-bold text-md text-gray-900 text-left pl-4">x{{ form.instance.quantity }}</p>
             <p class="font-manrope font-bold text-md text-gray-900 text-center">{{ form.instance.product.name | truncatewords:4 }}</p>
-            <p class="font-manrope font-bold text-md text-gray-900 text-right pr-4">{{ form.instance.product.price | floatformat:2 }} €</p>
-        </div>
+            
+            <div class="flex justify-between items-center">
+                {% if form.instance.product.promo %}
+                <div>
+                    <span class="font-light text-lg">{{ form.instance.product.price_promo | floatformat:2 }} €</span>
+                    <span class="text-red-500 text-sm line-through">{{ form.instance.product.price | floatformat:2 }} €</span>
+                </div>
+                {% else %}
+                <span class="font-light text-lg">{{ product.price | floatformat:2 }} €</span>
+                {% endif %}
+            </div>
     {% endfor %}
 </div>
 

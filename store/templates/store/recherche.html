@@ -19,7 +19,14 @@
             </div>
             <div class="px-4">
                 <div class="flex justify-between items-center">
+                    {% if product.promo %}
+                    <div>
+                        <span class="font-light text-lg">{{ product.price_promo | floatformat }} €</span>
+                        <span class="text-red-500 text-sm line-through">{{ product.price | floatformat }} €</span>
+                    </div>
+                    {% else %}
                     <span class="font-light text-lg">{{ product.price | floatformat }} €</span>
+                    {% endif %}
                 </div>
             </div>
             <div class="px-5 py-5 flex justify-center mt-auto">

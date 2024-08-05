@@ -55,9 +55,16 @@
                   <div class="font-bold text-2xl mb-2">{{ product.name }}</div>
               </div>
               <div class="px-4 py-2">
-                  <div class="flex justify-between items-center">
-                      <span class="font-bold text-lg">{{ product.price | floatformat }} €</span>
-                  </div>
+                <div class="flex justify-between items-center">
+                    {% if product.promo %}
+                    <div>
+                        <span class="font-light text-lg">{{ product.price_promo | floatformat }} €</span>
+                        <span class="text-red-500 text-sm line-through">{{ product.price | floatformat }} €</span>
+                    </div>
+                    {% else %}
+                    <span class="font-light text-lg">{{ product.price | floatformat }} €</span>
+                    {% endif %}
+                </div>
                   <br>
                   <div class="flex justify-between items-center">
                       <span class="font-light text-sm">{{ product.short_description }}</span>
