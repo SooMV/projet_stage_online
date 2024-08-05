@@ -7,10 +7,10 @@
 <div class="container w-4/5 mx-auto ">
     <hr>
 </div>
-<div class="container flex items-center justify-center my-10 mx-auto">
+<div class="container flex items-center justify-center my-10 mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {% for product in resultats %}
-        <div class="max-w-xs rounded-md overflow-hidden shadow-2xl flex flex-col h-full">
+        <div class="max-w-xs rounded-md overflow-hidden shadow-md flex flex-col h-full">
             <div class="h-64 overflow-hidden flex justify-center items-center">
                 <img src="{{ product.thumbnails1.url }}" alt="{{ product.name }}" class="object-cover w-full h-full">
             </div>
@@ -22,7 +22,7 @@
                     {% if product.promo %}
                     <div>
                         <span class="font-light text-lg">{{ product.price_promo | floatformat }} €</span>
-                        <span class="text-red-500 text-sm line-through">{{ product.price | floatformat }} €</span>
+                        <del class="text-red-500 text-sm line-through">{{ product.price | floatformat }} €</del>
                     </div>
                     {% else %}
                     <span class="font-light text-lg">{{ product.price | floatformat }} €</span>
@@ -35,6 +35,7 @@
                 </a>
             </div>
         </div>
+      
        
     
         {% empty %}

@@ -41,8 +41,12 @@
                         <div class="flex items-center justify-between w-full mb-4">
                             
                             <div class="flex items-start justify-start flex-col">
-                            <h5 class="font-manrope font-bold text-2xl leading-9 text-gray-900">  {{ form.instance.product.name }}</h5>    
-                            <h6 class="text-indigo-600 font-manrope font-bold text-2xl  text-right">{{ form.instance.product.price |floatformat:2 }} €</h6>
+                            <h5 class="font-manrope font-bold text-2xl leading-9 text-gray-900">  {{ form.instance.product.name }}</h5> 
+                            {% if form.instance.product.promo %}
+                                <span class="text-indigo-600 font-manrope font-bold text-2xl  text-right">{{ form.instance.product.price_promo | floatformat }} €</span>  
+                            {% else %}
+                            <span class="text-indigo-600 font-manrope font-bold text-2xl  text-right">{{ form.instance.product.price | floatformat }} €</span>
+                            {% endif %}
                             <p>{% translate "Size :" %}{{ form.instance.product_taille.taille }}</p>  
                         </div>
                         </div>

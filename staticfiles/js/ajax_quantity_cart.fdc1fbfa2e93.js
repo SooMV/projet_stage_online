@@ -49,13 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('my subtotal is :', subtotal);
                     console.log('my total is :', total);
 
+
                     // Mettre à jour la quantité affichée
                     document.getElementById(`quantity-${productId}`).value = quantity;
 
                     // Mettre à jour le sous-total affiché
-                    document.getElementById(`subtotal-${productId}`).textContent = subtotal.toFixed(2);
+                    document.getElementById(`subtotal-${productId}`).textContent = `${subtotal.toFixed(2)} €`;
+                    console.log('my second subtotal is :', subtotal);
                     // Mettre à jour le total affiché
-                    document.getElementById('cart-total').textContent = total.toFixed(2);
+                    document.getElementById('cart-total').textContent = `${total}€`;
                 } else {
                     console.log('Error: No data returned from server');
                 }
